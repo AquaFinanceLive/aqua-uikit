@@ -11,7 +11,7 @@ const Logo: React.FC<LogoProps> = ({ ...props }) => {
       <image
         width="81"
         height="38"
-        href="/images/goong/LogoText.png"
+        href="/images/LogoText.png"
       />
     </Svg>
   );

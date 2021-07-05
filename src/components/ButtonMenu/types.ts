@@ -6,7 +6,7 @@ export type ButtonMenuItemProps = {
 } & ButtonProps;
 
 export interface ButtonMenuProps {
-  variant?: typeof variants.PRIMARY | typeof variants.SUBTLE;
+  variant?: typeof variants.PRIMARY | typeof variants.SUCCESS | typeof variants.SUBTLE;
   activeIndex?: number;
   onClick?: (index: number) => void;
   size?: Sizes;

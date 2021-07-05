@@ -31,7 +31,8 @@ const ButtonMenuItem: React.FC<ButtonMenuItemProps> = ({
         size={size}
         style={{ borderRadius: "16px" }}
         variant="tertiary"
-        colorKey={variant === variants.PRIMARY ? "primary" : "textSubtle"}
+        // eslint-disable-next-line no-nested-ternary
+        colorKey={variant === variants.PRIMARY ? "primary" : variant === variants.SUCCESS ? "success": "textSubtle"}
         {...props}
       />
     );
