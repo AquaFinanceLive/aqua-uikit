@@ -17,19 +17,19 @@ export const brandColors = {
 export const lightColors: Colors = {
   ...baseColors,
   ...brandColors,
-  background: "#fdfafa",
-  backgroundDisabled: "#f7e7e6",
-  contrast: "#261c13",
+  background: "#ffffff",
+  backgroundDisabled: "#eaf8ff",
+  contrast: "#00A7F5",
   invertedContrast: "#FFFFFF",
-  input: "#efe9e4",
-  tertiary: "#EFF4F5",
+  input: "#e8e8e8",
+  tertiary: "#C2ECFF",
   text: "#000",
-  textDisabled: "#d6cfcc",
+  textDisabled: "#BDBDBD",
   textSubtle: "#00A7F5",
-  borderColor: "#ebeae9",
+  borderColor: "#C2ECFF",
   card: "#FFFFFF",
   gradients: {
-    bubblegum: "linear-gradient(139.73deg, #fff7e6 0%, #fff1ea 100%)",
+    bubblegum: "linear-gradient(139.73deg, #fff7e6 0%, #C2ECFF 100%)",
   },
 };
 

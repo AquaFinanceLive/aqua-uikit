@@ -2111,7 +2111,7 @@ var Logo$1 = function (_a) {
         React__default['default'].createElement(Icon$q, { className: "mobile-icon" }),
         React__default['default'].createElement(Logo, { className: "desktop-icon", isDark: isDark })));
     return (React__default['default'].createElement(Flex, null,
-        React__default['default'].createElement(MenuButton, { "aria-label": "Toggle menu", onClick: togglePush, mr: "24px" }, isPushed ? (React__default['default'].createElement(Icon$L, { width: "24px", color: "textSubtle" })) : (React__default['default'].createElement(Icon$K, { width: "24px", color: "textSubtle" }))),
+        React__default['default'].createElement(MenuButton, { "aria-label": "Toggle menu", onClick: togglePush, mr: "24px" }, isPushed ? (React__default['default'].createElement(Icon$L, { width: "24px", color: "background" })) : (React__default['default'].createElement(Icon$K, { width: "24px", color: "background" }))),
         isAbsoluteUrl ? (React__default['default'].createElement(StyledLink$1, { as: "a", href: href, "aria-label": "Pancake home page" }, innerLogo)) : (React__default['default'].createElement(StyledLink$1, { to: href, "aria-label": "Pancake home page" }, innerLogo))));
 };
 var templateObject_1$y;
@@ -2409,7 +2409,7 @@ var StyledPanel = styled__default['default'].div(templateObject_1$D || (template
     return (showMenu ? "80px" : 0);
 }, function (_a) {
     var theme = _a.theme;
-    return theme.nav.background;
+    return theme.colors.background;
 }, function (_a) {
     var isPushed = _a.isPushed;
     return (isPushed ? SIDEBAR_WIDTH_FULL + "px" : 0);
@@ -2854,8 +2854,8 @@ var baseColors = {
 var brandColors = {
     binance: "#F0B90B",
 };
-var lightColors = __assign(__assign(__assign({}, baseColors), brandColors), { background: "#fdfafa", backgroundDisabled: "#f7e7e6", contrast: "#261c13", invertedContrast: "#FFFFFF", input: "#efe9e4", tertiary: "#EFF4F5", text: "#000", textDisabled: "#d6cfcc", textSubtle: "#00A7F5", borderColor: "#ebeae9", card: "#FFFFFF", gradients: {
-        bubblegum: "linear-gradient(139.73deg, #fff7e6 0%, #fff1ea 100%)",
+var lightColors = __assign(__assign(__assign({}, baseColors), brandColors), { background: "#ffffff", backgroundDisabled: "#eaf8ff", contrast: "#00A7F5", invertedContrast: "#FFFFFF", input: "#e8e8e8", tertiary: "#C2ECFF", text: "#000", textDisabled: "#BDBDBD", textSubtle: "#00A7F5", borderColor: "#C2ECFF", card: "#FFFFFF", gradients: {
+        bubblegum: "linear-gradient(139.73deg, #fff7e6 0%, #C2ECFF 100%)",
     } });
 var darkColors = __assign(__assign(__assign({}, baseColors), brandColors), { secondary: "#9A6AFF", background: "#343135", backgroundDisabled: "#3c3742", contrast: "#FFFFFF", invertedContrast: "#191326", input: "#483f5a", primaryDark: "#0098A1", tertiary: "#353547", text: "#EAE2FC", textDisabled: "#666171", textSubtle: "#c9c4d4", borderColor: "#524B63", card: "#27262c", gradients: {
         bubblegum: "linear-gradient(139.73deg, #313D5C 0%, #3D2A54 100%)",
