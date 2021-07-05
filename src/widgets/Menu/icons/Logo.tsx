@@ -5,13 +5,12 @@ import { SvgProps } from "../../../components/Svg/types";
 interface LogoProps extends SvgProps {
   isDark: boolean;
 }
-
 const Logo: React.FC<LogoProps> = ({ ...props }) => {
   return (
-    <Svg viewBox="0 0 205 26" {...props}>
+    <Svg viewBox="0 0 81 38" {...props}>
       <image
-        width="205"
-        height="26"
+        width="81"
+        height="38"
         href="/images/goong/LogoText.png"
       />
     </Svg>
