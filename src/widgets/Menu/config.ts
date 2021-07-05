@@ -90,11 +90,6 @@ export const links = [
   //   ],
   // },
   {
-    label: "Check LP",
-    icon: "Glasses",
-    href: "https://howmuchismylp.com/",
-  },
-  {
     label: "More",
     icon: "MoreIcon",
     items: [
@@ -120,6 +115,11 @@ export const links = [
 
 export const socials = [
   {
+    label: "Twitter",
+    icon: "TwitterIcon",
+    href: "https://twitter.com/TomyumgoongF",
+  },
+  {
     label: "Telegram",
     icon: "TelegramIcon",
     items: [
@@ -137,11 +137,7 @@ export const socials = [
       },
     ],
   },
-  {
-    label: "Twitter",
-    icon: "TwitterIcon",
-    href: "https://twitter.com/TomyumgoongF",
-  },
+  
 ];
 
 export const MENU_HEIGHT = 64;

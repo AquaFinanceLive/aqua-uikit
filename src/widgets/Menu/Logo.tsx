@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import { LogoIcon } from "../../components/Svg";
 import Flex from "../../components/Flex/Flex";
 import { HamburgerIcon, HamburgerCloseIcon, LogoIcon as LogoWithText } from "./icons";
 import MenuButton from "./MenuButton";
@@ -16,18 +15,8 @@ interface Props {
 const StyledLink = styled(Link)`
   display: flex;
   align-items: center;
-  .mobile-icon {
-    width: 32px;
-    ${({ theme }) => theme.mediaQueries.nav} {
-      display: none;
-    }
-  }
   .desktop-icon {
-    width: 156px;
-    display: none;
-    ${({ theme }) => theme.mediaQueries.nav} {
-      display: block;
-    }
+    width: 81px;
   }
 `;
 
@@ -35,7 +24,7 @@ const Logo: React.FC<Props> = ({ isPushed, togglePush, isDark, href }) => {
   const isAbsoluteUrl = href.startsWith("http");
   const innerLogo = (
     <>
-      <LogoIcon className="mobile-icon" />
+      {/* <LogoIcon className="mobile-icon" /> */}
       <LogoWithText className="desktop-icon" isDark={isDark} />
     </>
   );
@@ -50,11 +39,11 @@ const Logo: React.FC<Props> = ({ isPushed, togglePush, isDark, href }) => {
         )}
       </MenuButton>
       {isAbsoluteUrl ? (
-        <StyledLink as="a" href={href} aria-label="Pancake home page">
+        <StyledLink as="a" href={href} aria-label="Aqua home page">
           {innerLogo}
         </StyledLink>
       ) : (
-        <StyledLink to={href} aria-label="Pancake home page">
+        <StyledLink to={href} aria-label="Aqua home page">
           {innerLogo}
         </StyledLink>
       )}
