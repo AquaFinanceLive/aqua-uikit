@@ -18,6 +18,7 @@ const UserBlock: React.FC<Props> = ({ account, login, logout }) => {
         <Button
           size="sm"
           variant="success"
+          style={{ borderRadius: "16px" }}
           onClick={() => {
             onPresentAccountModal();
           }}
@@ -28,6 +29,7 @@ const UserBlock: React.FC<Props> = ({ account, login, logout }) => {
         <Button
           size="sm"
           variant="success"
+          style={{ borderRadius: "16px" }}
           onClick={() => {
             onPresentConnectModal();
           }}
