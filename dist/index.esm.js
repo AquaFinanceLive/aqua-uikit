@@ -2843,7 +2843,7 @@ var lightColors = __assign(__assign(__assign({}, baseColors), brandColors), { ba
     } });
 var darkColors = __assign(__assign(__assign({}, baseColors), brandColors), { primary: "#01164B", background: "#052063", backgroundDisabled: "#3c3742", contrast: "#FFFFFF", invertedContrast: "#191326", input: "#052D72", primaryDark: "#01164B", tertiary: "#052D72", text: "#FFFFFF", textDisabled: "#c3c9da", textSubtle: "#FFFFFF", borderColor: "#524B63", card: "#01164B", gradients: {
         bubblegum: "linear-gradient(139.73deg, #313D5C 0%, #3D2A54 100%)",
-        background: "#01164B",
+        background: "linear-gradient(180deg, #001549 0%, #013B81 100%);",
     } });
 
 var light = {
