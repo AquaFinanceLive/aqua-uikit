@@ -1749,10 +1749,10 @@ var Modal = function (_a) {
         React.createElement(ModalHeader, null,
             React.createElement(ModalTitle, null,
                 onBack && (React.createElement(IconButton, { variant: "text", onClick: onBack, "area-label": "go back", mr: "8px" },
-                    React.createElement(Icon$5, { color: "primary" }))),
+                    React.createElement(Icon$5, { color: "textSubtle" }))),
                 React.createElement(Heading, null, title)),
             !hideCloseButton && (React.createElement(IconButton, { variant: "text", onClick: onDismiss, "aria-label": "Close the dialog" },
-                React.createElement(Icon$k, { color: "primary" })))),
+                React.createElement(Icon$k, { color: "textSubtle" })))),
         React.createElement(Flex, { flexDirection: "column", p: bodyPadding }, children)));
 };
 var templateObject_1$u, templateObject_2$9, templateObject_3$5;
@@ -2840,7 +2840,7 @@ var brandColors = {
 var lightColors = __assign(__assign(__assign({}, baseColors), brandColors), { background: "#ffffff", backgroundDisabled: "#eaf8ff", contrast: "#00A7F5", invertedContrast: "#FFFFFF", input: "#e8e8e8", tertiary: "#C2ECFF", text: "#000", textDisabled: "#BDBDBD", textSubtle: "#00A7F5", borderColor: "#C2ECFF", card: "#FFFFFF", gradients: {
         bubblegum: "linear-gradient(139.73deg, #fff7e6 0%, #C2ECFF 100%)",
     } });
-var darkColors = __assign(__assign(__assign({}, baseColors), brandColors), { primary: "#01164B", background: "#052063", backgroundDisabled: "#3c3742", contrast: "#FFFFFF", invertedContrast: "#191326", input: "#483f5a", primaryDark: "#01164B", tertiary: "#353547", text: "#FFFFFF", textDisabled: "#666171", textSubtle: "#FFFFFF", borderColor: "#524B63", card: "#01164B", gradients: {
+var darkColors = __assign(__assign(__assign({}, baseColors), brandColors), { primary: "#01164B", background: "#052063", backgroundDisabled: "#3c3742", contrast: "#FFFFFF", invertedContrast: "#191326", input: "#052D72", primaryDark: "#01164B", tertiary: "#052D72", text: "#FFFFFF", textDisabled: "#c3c9da", textSubtle: "#FFFFFF", borderColor: "#524B63", card: "#01164B", gradients: {
         bubblegum: "linear-gradient(139.73deg, #313D5C 0%, #3D2A54 100%)",
     } });
 
