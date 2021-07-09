@@ -2839,9 +2839,11 @@ var brandColors = {
 };
 var lightColors = __assign(__assign(__assign({}, baseColors), brandColors), { background: "#ffffff", backgroundDisabled: "#eaf8ff", contrast: "#00A7F5", invertedContrast: "#FFFFFF", input: "#e8e8e8", tertiary: "#C2ECFF", text: "#000", textDisabled: "#BDBDBD", textSubtle: "#00A7F5", borderColor: "#C2ECFF", card: "#FFFFFF", gradients: {
         bubblegum: "linear-gradient(139.73deg, #fff7e6 0%, #C2ECFF 100%)",
+        background: "linear-gradient(180deg, #009DF5 0%, rgba(0, 157, 245, 0) 100%)",
     } });
 var darkColors = __assign(__assign(__assign({}, baseColors), brandColors), { primary: "#01164B", background: "#052063", backgroundDisabled: "#3c3742", contrast: "#FFFFFF", invertedContrast: "#191326", input: "#052D72", primaryDark: "#01164B", tertiary: "#052D72", text: "#FFFFFF", textDisabled: "#c3c9da", textSubtle: "#FFFFFF", borderColor: "#524B63", card: "#01164B", gradients: {
         bubblegum: "linear-gradient(139.73deg, #313D5C 0%, #3D2A54 100%)",
+        background: "#01164B",
     } });
 
 var light = {
@@ -2882,7 +2884,7 @@ var light$1 = (_a$2 = {},
         borderColorHover: "currentColor",
         boxShadow: "none",
         boxShadowActive: "none",
-        color: lightColors.primary,
+        color: lightColors.textSubtle,
     },
     _a$2[TEXT] = {
         background: "transparent",
