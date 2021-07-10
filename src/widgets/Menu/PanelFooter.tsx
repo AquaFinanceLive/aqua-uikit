@@ -114,7 +114,7 @@ const PanelFooter: React.FC<Props> = ({
       <PriceEntry>
         {wafiPriceUsd ? (
           <PriceLink href={wafiPriceLink} target="_blank">
-            <AfiRound width="24px" mr="8px" />
+            <AfiRound width="32px" mr="8px" />
             <Text color="textSubtle" bold>{`$${wafiPriceUsd.toFixed(5)}`}</Text>
           </PriceLink>
         ) : (
@@ -124,7 +124,7 @@ const PanelFooter: React.FC<Props> = ({
       <PriceEntry>
         {ceaPriceUsd ? (
           <PriceLink href={ceaPriceLink} target="_blank">
-            <CeaRound width="24px" mr="8px" />
+            <CeaRound width="32px" mr="8px" />
             <Text color="textSubtle" bold>{`$${ceaPriceUsd.toFixed(5)}`}</Text>
           </PriceLink>
         ) : (

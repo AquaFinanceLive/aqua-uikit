@@ -94,17 +94,18 @@ export const links = [
     icon: "MoreIcon",
     items: [
       {
+        label: "Website",
+        href: "https://www.aquafinance.live/",
+      },
+      {
         label: "Roadmap",
-        href: "https://docs.tomyumgoong.finance/tomyumgoong/roadmap",
+        href: "https://aquafinance-dolph.gitbook.io/aqua-finance/aqua-roadmap/roadmap",
       },
       {
         label: "Docs",
-        href: "http://docs.tomyumgoong.finance",
+        href: "https://aquafinance-dolph.gitbook.io/aqua-finance/",
       },
-      {
-        label: "Github",
-        href: "https://github.com/TomYumGoongFinance",
-      },
+      
       // {
       //   label: "Blog",
       //   href: "https://goosefinance.medium.com/",
@@ -117,7 +118,7 @@ export const socials = [
   {
     label: "Twitter",
     icon: "TwitterIcon",
-    href: "https://twitter.com/TomyumgoongF",
+    href: "https://twitter.com/aqua_finance",
   },
   {
     label: "Telegram",
@@ -125,17 +126,32 @@ export const socials = [
     items: [
       {
         label: "Announcement",
-        href: "https://t.me/tomyumgoongfinance",
+        href: "https://t.me/aqua_finance_announcement",
       },
       {
         label: "English",
-        href: "https://t.me/tomyumgoong_finance",
+        href: "https://t.me/aqua_finance_International",
       },
       {
         label: "ไทย",
-        href: "https://t.me/tomyumgoong_thailand",
+        href: "https://t.me/aqua_finance_thailand",
       },
     ],
+  },
+  {
+    label: "Discord",
+    icon: "DiscordIcon",
+    href: "https://discord.com/invite/c5QTPhYCV4",
+  },
+  {
+    label: "Medium",
+    icon: "MediumIcon",
+    href: "https://aqua-finance.medium.com/",
+  },
+  {
+    label: "Github",
+    icon: "GithubIcon",
+    href: "https://github.com/aqua-finance",
   },
   
 ];
