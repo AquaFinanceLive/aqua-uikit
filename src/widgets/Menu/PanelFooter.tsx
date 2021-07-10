@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { PancakeRoundIcon, CogIcon, SvgProps } from "../../components/Svg";
+import { AfiRound, CeaRound, CogIcon, SvgProps } from "../../components/Svg";
 import Text from "../../components/Text/Text";
 import Flex from "../../components/Flex/Flex";
 import Dropdown from "../../components/Dropdown/Dropdown";
@@ -66,11 +66,13 @@ const PanelFooter: React.FC<Props> = ({
   pushNav,
   toggleTheme,
   isDark,
-  cakePriceUsd,
+  ceaPriceUsd,
+  wafiPriceUsd,
   currentLang,
   langs,
   setLang,
-  priceLink,
+  ceaPriceLink,
+  wafiPriceLink,
 }) => {
   if (!isPushed) {
     return (
@@ -110,10 +112,20 @@ const PanelFooter: React.FC<Props> = ({
         </Flex>
       </SocialEntry>
       <PriceEntry>
-        {cakePriceUsd ? (
-          <PriceLink href={priceLink} target="_blank">
-            <PancakeRoundIcon width="24px" mr="8px" />
-            <Text color="textSubtle" bold>{`$${cakePriceUsd.toFixed(3)}`}</Text>
+        {wafiPriceUsd ? (
+          <PriceLink href={wafiPriceLink} target="_blank">
+            <AfiRound width="24px" mr="8px" />
+            <Text color="textSubtle" bold>{`$${wafiPriceUsd.toFixed(5)}`}</Text>
+          </PriceLink>
+        ) : (
+          <Skeleton width={80} height={24} />
+        )}
+      </PriceEntry>
+      <PriceEntry>
+        {ceaPriceUsd ? (
+          <PriceLink href={ceaPriceLink} target="_blank">
+            <CeaRound width="24px" mr="8px" />
+            <Text color="textSubtle" bold>{`$${ceaPriceUsd.toFixed(5)}`}</Text>
           </PriceLink>
         ) : (
           <Skeleton width={80} height={24} />
