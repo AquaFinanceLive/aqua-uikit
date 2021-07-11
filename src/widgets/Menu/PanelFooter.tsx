@@ -49,6 +49,7 @@ const SettingsEntry = styled.div`
 const SocialEntry = styled.div`
   display: flex;
   align-items: center;
+  width: 100%;
   justify-content: space-around;
   padding: 0 16px;
 `;
@@ -87,29 +88,27 @@ const PanelFooter: React.FC<Props> = ({
   return (
     <Container>
       <SocialEntry>
-        <Flex>
-          {socials.map((social, index) => {
-            const Icon = Icons[social.icon];
-            const iconProps = { width: "24px", color: "textSubtle", style: { cursor: "pointer" } };
-            const mr = index < socials.length - 1 ? "8px" : 0;
-            if (social.items) {
-              return (
-                <Dropdown key={social.label} position="top" target={<Icon {...iconProps} mr={mr} />}>
-                  {social.items.map((item) => (
-                    <Link external key={item.label} href={item.href} aria-label={item.label} color="textSubtle">
-                      {item.label}
-                    </Link>
-                  ))}
-                </Dropdown>
-              );
-            }
+        {socials.map((social, index) => {
+          const Icon = Icons[social.icon];
+          const iconProps = { width: "24px", color: "textSubtle", style: { cursor: "pointer" } };
+          const mr = index < socials.length - 1 ? "8px" : 0;
+          if (social.items) {
             return (
-              <Link external key={social.label} href={social.href} aria-label={social.label} mr={mr}>
-                <Icon {...iconProps} />
-              </Link>
+              <Dropdown key={social.label} position="top" target={<Icon {...iconProps} mr={mr} />}>
+                {social.items.map((item) => (
+                  <Link external key={item.label} href={item.href} aria-label={item.label} color="textSubtle">
+                    {item.label}
+                  </Link>
+                ))}
+              </Dropdown>
             );
-          })}
-        </Flex>
+          }
+          return (
+            <Link external key={social.label} href={social.href} aria-label={social.label} mr={mr}>
+              <Icon {...iconProps} />
+            </Link>
+          );
+        })}
       </SocialEntry>
       <PriceEntry>
         {wafiPriceUsd ? (
