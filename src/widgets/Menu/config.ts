@@ -23,6 +23,11 @@ export const links = [
     icon: "FarmIcon",
     href: "/farms",
   },
+  {
+    label: "Wrap",
+    icon: "WrapIcon",
+    href: "/wrap",
+  },
   // {
   //   label: "Pools",
   //   icon: "PoolIcon",

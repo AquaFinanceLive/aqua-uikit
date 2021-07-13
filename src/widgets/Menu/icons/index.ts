@@ -29,3 +29,4 @@ export { default as GlassesIcon } from "./Glasses";
 export { default as DiscordIcon } from "./Discord";
 export { default as GithubIcon } from "./Github";
 export { default as MediumIcon } from "./Medium";
+export { default as WrapIcon } from "./Wrap";
