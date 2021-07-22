@@ -110,7 +110,7 @@ export const links = [
         label: "Docs",
         href: "https://aquafinance-dolph.gitbook.io/aqua-finance/",
       },
-      
+
       // {
       //   label: "Blog",
       //   href: "https://goosefinance.medium.com/",
@@ -158,7 +158,6 @@ export const socials = [
     icon: "GithubIcon",
     href: "https://github.com/aqua-finance",
   },
-  
 ];
 
 export const MENU_HEIGHT = 64;

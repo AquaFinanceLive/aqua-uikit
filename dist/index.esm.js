@@ -644,7 +644,7 @@ var ButtonMenu = function (_a) {
     })));
 };
 
-var InactiveButton = styled(Button)(templateObject_1$8 || (templateObject_1$8 = __makeTemplateObject(["\n  background-color: transparent;\n  color: rgba(255,255,255,0.8);\n\n  &:hover:not(:disabled):not(:active) {\n    background-color: transparent;\n  }\n"], ["\n  background-color: transparent;\n  color: rgba(255,255,255,0.8);\n\n  &:hover:not(:disabled):not(:active) {\n    background-color: transparent;\n  }\n"])));
+var InactiveButton = styled(Button)(templateObject_1$8 || (templateObject_1$8 = __makeTemplateObject(["\n  background-color: transparent;\n  color: rgba(255, 255, 255, 0.8);\n\n  &:hover:not(:disabled):not(:active) {\n    background-color: transparent;\n  }\n"], ["\n  background-color: transparent;\n  color: rgba(255, 255, 255, 0.8);\n\n  &:hover:not(:disabled):not(:active) {\n    background-color: transparent;\n  }\n"])));
 var ButtonMenuItem = function (_a) {
     var _b = _a.isActive, isActive = _b === void 0 ? false : _b, _c = _a.size, size = _c === void 0 ? sizes.MD : _c, _d = _a.variant, variant = _d === void 0 ? variants.PRIMARY : _d, as = _a.as, props = __rest(_a, ["isActive", "size", "variant", "as"]);
     if (!isActive) {
@@ -1541,12 +1541,12 @@ var mediaQueries = {
     nav: "@media screen and (min-width: " + breakpointMap.lg + "px)",
 };
 var shadows = {
-    level1: '0px 2px 12px -8px rgba(25, 19, 38, 0.1), 0px 1px 1px rgba(25, 19, 38, 0.05)',
-    active: '0px 0px 0px 1px #0098A1, 0px 0px 4px 8px rgba(31, 199, 212, 0.4)',
-    success: '0px 0px 0px 1px #31D0AA, 0px 0px 0px 4px rgba(49, 208, 170, 0.2)',
-    warning: '0px 0px 0px 1px #f5000f, 0px 0px 0px 4px rgba(237, 75, 158, 0.2)',
-    focus: '0px 0px 0px 1px #00A7F5, 0px 0px 0px 4px rgba(0, 167, 245, 0.6)',
-    inset: 'inset 0px 2px 2px -1px rgba(74, 74, 104, 0.1)',
+    level1: "0px 2px 12px -8px rgba(25, 19, 38, 0.1), 0px 1px 1px rgba(25, 19, 38, 0.05)",
+    active: "0px 0px 0px 1px #0098A1, 0px 0px 4px 8px rgba(31, 199, 212, 0.4)",
+    success: "0px 0px 0px 1px #31D0AA, 0px 0px 0px 4px rgba(49, 208, 170, 0.2)",
+    warning: "0px 0px 0px 1px #f5000f, 0px 0px 0px 4px rgba(237, 75, 158, 0.2)",
+    focus: "0px 0px 0px 1px #00A7F5, 0px 0px 0px 4px rgba(0, 167, 245, 0.6)",
+    inset: "inset 0px 2px 2px -1px rgba(74, 74, 104, 0.1)",
 };
 var spacing = [0, 4, 8, 16, 24, 32, 48, 64];
 var radii = {

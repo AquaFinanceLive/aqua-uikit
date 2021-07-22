@@ -8,11 +8,7 @@ interface LogoProps extends SvgProps {
 const Logo: React.FC<LogoProps> = ({ ...props }) => {
   return (
     <Svg viewBox="0 0 81 38" {...props}>
-      <image
-        width="81"
-        height="38"
-        href="/images/LogoText.png"
-      />
+      <image width="81" height="38" href="/images/LogoText.png" />
     </Svg>
   );
 };

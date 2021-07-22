@@ -10,7 +10,7 @@ type InactiveButtonProps = {
 
 const InactiveButton = styled(Button)<InactiveButtonProps>`
   background-color: transparent;
-  color: rgba(255,255,255,0.8);
+  color: rgba(255, 255, 255, 0.8);
 
   &:hover:not(:disabled):not(:active) {
     background-color: transparent;
@@ -32,7 +32,7 @@ const ButtonMenuItem: React.FC<ButtonMenuItemProps> = ({
         style={{ borderRadius: "16px" }}
         variant="tertiary"
         // eslint-disable-next-line no-nested-ternary
-        colorKey={variant === variants.PRIMARY ? "primary" : variant === variants.SUCCESS ? "success": "textSubtle"}
+        colorKey={variant === variants.PRIMARY ? "primary" : variant === variants.SUCCESS ? "success" : "textSubtle"}
         {...props}
       />
     );
