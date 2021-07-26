@@ -62,6 +62,11 @@ const PriceEntry = styled.div`
   padding: 0 16px;
 `;
 
+const CertifiedBadge = styled.img`
+width: 80%;
+max-width: 120px;
+`
+
 const PanelFooter: React.FC<Props> = ({
   isPushed,
   pushNav,
@@ -87,6 +92,9 @@ const PanelFooter: React.FC<Props> = ({
 
   return (
     <Container>
+      <Flex justifyContent="center">
+        <a href="https://rugdoc.io/project/aqua-finance"><CertifiedBadge src="/images/rugdoc-review-badge.png" alt="Rugdoc"/></a>
+      </Flex>
       <SocialEntry>
         {socials.map((social, index) => {
           const Icon = Icons[social.icon];
