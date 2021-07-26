@@ -25,7 +25,6 @@ const Container = styled.div`
 
 const CertifiedBadge = styled.a`
   width: 80%;
-  max-width: 120px;
 `;
 
 const PanelBody: React.FC<Props> = ({ isPushed, pushNav, isMobile, links }) => {

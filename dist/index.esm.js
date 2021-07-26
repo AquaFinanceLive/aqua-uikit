@@ -2387,7 +2387,7 @@ var MenuLink = function (_a) {
 
 var Icons = IconModule;
 var Container$3 = styled.div(templateObject_1$B || (templateObject_1$B = __makeTemplateObject(["\n  display: flex;\n  flex-direction: column;\n  overflow-y: auto;\n  overflow-x: hidden;\n  height: 100%;\n"], ["\n  display: flex;\n  flex-direction: column;\n  overflow-y: auto;\n  overflow-x: hidden;\n  height: 100%;\n"])));
-var CertifiedBadge = styled.a(templateObject_2$c || (templateObject_2$c = __makeTemplateObject(["\n  width: 80%;\n  max-width: 120px;\n"], ["\n  width: 80%;\n  max-width: 120px;\n"])));
+var CertifiedBadge = styled.a(templateObject_2$c || (templateObject_2$c = __makeTemplateObject(["\n  width: 80%;\n"], ["\n  width: 80%;\n"])));
 var PanelBody = function (_a) {
     var isPushed = _a.isPushed, pushNav = _a.pushNav, isMobile = _a.isMobile, links = _a.links;
     var location = useLocation();
